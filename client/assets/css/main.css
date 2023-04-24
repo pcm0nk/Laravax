@@ -1,0 +1,60 @@
+html, body {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-600 dark:text-gray-300;
+  font-family: Tahoma, sans-serif!important;
+  letter-spacing: initial!important;
+}
+*, ::before, ::after{
+  letter-spacing: initial!important;
+
+}
+html.dark {
+  @apply bg-gray-900;
+}
+
+p, h1, h2, h3,h4,h5 {
+  @apply m-0;
+}
+
+button {
+  @apply bg-transparent;
+}
+
+.skeleton {
+  --text-opacity: 0;
+  background-image: linear-gradient(100deg, #edf2f7 0%, #f4f7fa 20%, #edf2f7 40%);
+  background-position: 50%;
+  background-size: 200%;
+  animation: skeleton 1.25s infinite linear;
+  @apply rounded-md;
+}
+
+.dark .skeleton {
+  background-image: linear-gradient(100deg, #4B5563 0%, #6B7280 20%, #4B5563 40%);
+}
+
+
+.v-table .v-table__wrapper > table > thead > tr > th{
+  color: rgba(var(--v-theme-on-surface))!important;
+}
+.v-table .v-table__wrapper > table > thead > tr > td{
+  color: rgba(var(--v-theme-on-surface))!important;
+}
+.v-theme--LightTheme .v-list-item__prepend > .v-icon{
+  opacity:1!important;
+}
+.v-theme--LightTheme .v-list-item__append > .v-icon{
+  opacity:1!important;
+}
+.v-theme--DarkTheme .v-list-item{
+  color:#c8c7ca;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: 50%;
+  }
+  50%, 100% {
+    background-position: -100%
+  }
+}
+
