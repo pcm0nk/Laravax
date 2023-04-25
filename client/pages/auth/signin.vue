@@ -67,7 +67,7 @@ export default {
               <v-form autocomplete="off" model-value="validit" @keydown.enter="login">
                 <v-card min-height="320px" class="elevation-3" flat style="background-color:#0201041a!important">
                     <v-card-title class="text-center mb-4">
-                        <v-img height="160px" class="mt-4 mb-4" src="/pwalogo.webp"></v-img>
+                        <v-img height="160px" class="mt-4 mb-4" src="/pwalogo.png"></v-img>
                         <span class="text-h5 text-white" v-if="thetype == 'login'">Login To System</span>
                     </v-card-title>
                     <v-card-text class="pb-0 mb-0">
