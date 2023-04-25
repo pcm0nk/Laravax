@@ -1,0 +1,38 @@
+{
+  "name": "Laranux",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs",
+    "lint": "yarn lint:js",
+    "lint:js": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "lint:action": "yarn lint:js -f @jamesacarr/github-actions",
+    "style": "composer cs; yarn lint",
+    "test": "jest --config tests/js/jest.config.js",
+    "api": "./artisan serve",
+    "seed": "./artisan migrate:fresh --seed",
+    "caches": "./artisan config:cache; ./artisan route:cache; ./artisan cache:clear; ./artisan event:clear;",
+    "stan": "composer stan"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.1.96",
+    "@pinia/nuxt": "^0.4.7",
+    "pinia": "^2.0.33",
+    "pinia-plugin-persistedstate": "^3.1.0",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vuetify": "^3.1.8"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@types/js-cookie": "^3.0.3",
+    "@vueuse/nuxt": "^9.1.0",
+    "eslint": "^8.33.0",
+    "laravel-echo": "^1.11.7",
+    "nuxt": "^3.0.0",
+    "pusher-js": "^8.0.0",
+    "sass": "^1.59.3",
+    "typescript": "^4.8.4"
+  }
+}

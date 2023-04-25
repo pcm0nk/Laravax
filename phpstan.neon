@@ -1,0 +1,15 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+
+    # Determines the level of checking. 5 is a good starter point 8 is max
+    level: 8
+
+    ignoreErrors:
+
+    excludePaths:
+
+    checkMissingIterableValueType: false

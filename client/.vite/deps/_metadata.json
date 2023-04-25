@@ -1,0 +1,68 @@
+{
+  "hash": "c5034acc",
+  "browserHash": "f5db54cc",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "49b7c057",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "f90db004",
+      "needsInterop": false
+    },
+    "@iconify/vue": {
+      "src": "../../../node_modules/@iconify/vue/dist/iconify.mjs",
+      "file": "@iconify_vue.js",
+      "fileHash": "dafd594e",
+      "needsInterop": false
+    },
+    "tailvue": {
+      "src": "../../../node_modules/tailvue/dist/tailvue.es.js",
+      "file": "tailvue.js",
+      "fileHash": "05341684",
+      "needsInterop": false
+    },
+    "ofetch": {
+      "src": "../../../node_modules/ofetch/dist/index.mjs",
+      "file": "ofetch.js",
+      "fileHash": "dce3b534",
+      "needsInterop": false
+    },
+    "laravel-echo": {
+      "src": "../../../node_modules/laravel-echo/dist/echo.js",
+      "file": "laravel-echo.js",
+      "fileHash": "fc3c22c9",
+      "needsInterop": false
+    },
+    "pusher-js": {
+      "src": "../../../node_modules/pusher-js/dist/web/pusher.js",
+      "file": "pusher-js.js",
+      "fileHash": "62307a21",
+      "needsInterop": true
+    },
+    "dayjs": {
+      "src": "../../../node_modules/dayjs/dayjs.min.js",
+      "file": "dayjs.js",
+      "fileHash": "4008e533",
+      "needsInterop": true
+    },
+    "dayjs/plugin/relativeTime.js": {
+      "src": "../../../node_modules/dayjs/plugin/relativeTime.js",
+      "file": "dayjs_plugin_relativeTime__js.js",
+      "fileHash": "d9d287c6",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-B7UOCPZH": {
+      "file": "chunk-B7UOCPZH.js"
+    },
+    "chunk-RSJERJUL": {
+      "file": "chunk-RSJERJUL.js"
+    }
+  }
+}
