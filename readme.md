@@ -62,7 +62,7 @@ This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/lar
  * Must run `php artisan key:generate` to have a unique **Laravel App Key**
  * Must run `php artisan passport:keys --force` to regenerate passport keys to make sure you have unique keys
 
-### _ However if you dont do this,Your **Application Key** which is used for CSRF token and your **Passport Secret Keys** are exposed to every developer who used this repo (If that make sense) _
+_ If you dont do this,Your **Application Key** which is used for CSRF token and your **Passport Secret Keys** are exposed to every developer who used this repo (If that make sense) _
 
 
 * Feel free to delete excess media in  `/resources/`
