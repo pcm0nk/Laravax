@@ -29,7 +29,7 @@ export default {
             value:'actions',
             menuoption:
             [
-              {opid:0,icon:'mdi-circle-small',text:'Charts',to:'#'}
+              {opid:0,icon:'mdi-circle-small',text:'Charts',to:'/charts'}
             ]
           },
           {
@@ -42,13 +42,13 @@ export default {
               {
                 text:'Levels',
               opid:0,
-              to:'#',
+              to:'/basicinfo',
               icon:'mdi-circle-small'
             },
               {
                 text:'Top Chart',
               opid:1,
-              to:'#',
+              to:'/topchart',
               icon:'mdi-circle-small'
             }
             ]
