@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pcm0nk/laravax/ongoing-edit/resources/laravax.png" width="200" />
+  <img src="https://github.com/pcm0nk/Laravax/blob/master/resources/laravax.png" width="200" />
 </p>
 
 ## Laravel + Nuxt.js + Vuetify + Pinia Boilerplate - Laravax
