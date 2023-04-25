@@ -11,10 +11,10 @@ This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/lar
 ## :warning: I removed some of the packages that came from the forked project
 ### Back-end
 
-    + fumeapp/modeltyper: ^1.0,
-     acidjazz/humble: ^3.0,
-     acidjazz/metapi: ^2.1,
-     barryvdh/laravel-debugbar: ^3.5,
+    +fumeapp/modeltyper: ^1.0
+     acidjazz/humble: ^3.0
+     acidjazz/metapi: ^2.1
+     barryvdh/laravel-debugbar: ^3.5
 
 ### Front-end
     - @tailvue/nuxt: ^0.1.62,
