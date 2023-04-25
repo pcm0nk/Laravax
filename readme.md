@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/pcm0nk/laravax/master/resources/laravax.png" width="200" />
+  <img src="https://raw.githubusercontent.com/pcm0nk/laravax/ongoing-edit/resources/laravax.png" width="200" />
 </p>
 
 ## Laravel + Nuxt.js + Vuetify + Pinia Boilerplate - Laravax
@@ -29,7 +29,7 @@ This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/lar
 * [Laravel](https://laravel.com) - Backend Framework Version 10
   * [Passport](https://laravel.com/docs/10.x/passport) - Authenticating APIs using Laravel 
 
-## Frontend
+### Frontend
 * [NUXT v3](https://nuxt.com) (Front-end, A Progressive Vuejs framework
 
   * [Vuetify](https://vuetifyjs.com/) (UI Library with beautifully handcrafted Vue Components)
@@ -40,7 +40,7 @@ This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/lar
   * [Pinia](https://pinia.vuejs.org/) (Store library and state management framework for Vue 3)
      + Added Email and password rules in pinia and called it in auth/signing.vue 
 
-### Installation Instructions
+## Installation Instructions
 
 * clone from GitHub
 * run `composer install` to install all of your Back-end deps
@@ -73,7 +73,7 @@ You can remove media in  `/resources/`
 
 ### Api and Authentication
 
-* Api and auth can be accessed via the provided `Api` library which is based on the forked project -> **[fumeapp/laranuxt](https://github.com/fumeapp/laranuxt)**
+* Api and auth can be accessed via the provided `Api` library which is based on the forked project for more info visit **[fumeapp/laranuxt](https://github.com/fumeapp/laranuxt)**
 
 ```ts
 //typescript
@@ -130,10 +130,12 @@ const result = api.delete<api.MetApiResponse>('/user/1')
 
 * **Custome Theme** And **Tree Shaking:**  To change the color of the Dark or Light mode or to add/remove components using vuetify tree shaking check its plugin `plugin/vuetify.ts`
 
-* **Snackbar composition api**
+**Snackbar composition api**
 
 *  The implemented snackbar code is a copy of [Vuetify + Composition API Snackbar component that can be used globally](https://gist.github.com/wobsoriano/2f3f0480f24298e150be0c13f93bac20)
 
 ### Pinia
 
 * Example on how to use pinia in `auth/signing.vue`
+
+### I do not plan to maintain the project.but any pull to improve it is welcome
