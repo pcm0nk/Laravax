@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/fumeapp/laranuxt/main/resources/laranuxt.png" width="200" />
+  <img src="https://raw.githubusercontent.com/pcm0nk/laravax/master/resources/laravax.png" width="200" />
 </p>
 
 ## Laravel + Nuxt.js + Vuetify + Pinia Boilerplate - Laravax
@@ -62,7 +62,7 @@ This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/lar
  * Must run `php artisan key:generate` to have a unique **Laravel App Key**
  * Must run `php artisan passport:keys --force` to regenerate passport keys to make sure you have unique keys
 
-### <sub>  _If you dont do this,Your **Application Key** which is used for CSRF token and your **Passport Secret Keys** are exposed to every developer who used this repo (If that make sense)_ </sub>
+ _If you dont do this,Your **Application Key** which is used for CSRF token and your **Passport Secret Keys** are exposed to every developer who used this repo (If that make sense)_
 
 
 You can remove media in  `/resources/`
@@ -73,7 +73,7 @@ You can remove media in  `/resources/`
 
 ### Api and Authentication
 
-* Api and auth can be accessed via the provided `Api` library which is based on the forked project
+* Api and auth can be accessed via the provided `Api` library which is based on the forked project -> **[fumeapp/laranuxt](https://github.com/fumeapp/laranuxt)**
 
 ```ts
 //typescript
@@ -83,7 +83,7 @@ console.log(api.$user.name);
 
 #### Authentication
 
-* 
+* Take a look at auth/signin.vue in order to login we call useApi().login  
 ```ts
 //typescript
   const redirect = await api.login(result)
@@ -95,7 +95,7 @@ console.log(api.$user.name);
 ```
 
 #### API
-The API class provides helper functions to easily retrieve, update, and remove data from your Laravel endpoints.  If you use and update [modeltyper](https://github.com/fumeapp/modeltyper) regularly you will always have completely typed results
+The API class provides helper functions to easily retrieve, update, and remove data from your Laravel endpoints. 
 
 * To get a listing/index of data, use `api.index`
 ```ts
@@ -126,3 +126,14 @@ const result = api.store<api.MetApiResponse>('/user', { name: 'Bob', email: 'bob
 //typescript
 const result = api.delete<api.MetApiResponse>('/user/1')
 ```
+### Vuetify Custom Dark And Light Mode
+
+* **Custome Theme** And **Tree Shaking:**  To change the color of the Dark or Light mode or to add/remove components using vuetify tree shaking check its plugin `plugin/vuetify.ts`
+
+* **Snackbar composition api**
+
+*  The implemented snackbar code is a copy of [Vuetify + Composition API Snackbar component that can be used globally](https://gist.github.com/wobsoriano/2f3f0480f24298e150be0c13f93bac20)
+
+### Pinia
+
+* Example on how to use pinia in `auth/signing.vue`
