@@ -2,11 +2,11 @@
   <img src="https://raw.githubusercontent.com/fumeapp/laranuxt/main/resources/laranuxt.png" width="200" />
 </p>
 
-## Laravel + Nuxt.js + Vuetify + Pinia Boilerplate- Laranux
+## Laravel + Nuxt.js + Vuetify + Pinia Boilerplate - Laravax
 
 > Example of Authentication,Light & Dark Mode In Vuetify,Double Navigation Drawer, Multiple Layouts with different style and using pinia in nuxt 3 enviorment.
 
-This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/laranuxt)** then I added vuetify theme in dark and light mode, authentication with passport and pinia and some more
+This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/laranuxt)** then I added vuetify theme in dark and light mode, authentication with passport and pinia and some more which you can chech it at [Whats Included](#Whats-Included)
 
 :warning: I removed some of the packages that came from the forked project
 ### Back-end
@@ -23,7 +23,7 @@ This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/lar
     *"nuxt-windicss": "^2.5.5",
     +"lottie-web": "^5.8.1",
 
-### What is included
+### Whats Included
 
 * [Laravel](https://laravel.com) - Backend Framework Version 9
   * [Model Typer](https://github.com/fumeapp/modeltyper) - Generates Typescript interfaces from Laravel Models 
