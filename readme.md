@@ -11,17 +11,16 @@ This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/lar
 ## :warning: I removed some of the packages that came from the forked project
 ### Back-end
     -"fumeapp/modeltyper": "^1.0",
-    +"acidjazz/humble": "^3.0",
-    *"acidjazz/metapi": "^2.1",
+    -"acidjazz/humble": "^3.0",
+    -"acidjazz/metapi": "^2.1",
     -"barryvdh/laravel-debugbar": "^3.5",
-
 ### Front-end
     -"@tailvue/nuxt": "^0.1.62",
-    *"dayjs": "^1.10.7",
-    +"husky": "^8.0.1",
+    -"dayjs": "^1.10.7",
+    -"husky": "^8.0.1",
     -"@iconify/vue": "^4.0.0",
-    *"nuxt-windicss": "^2.5.5",
-    +"lottie-web": "^5.8.1",
+    -"nuxt-windicss": "^2.5.5",
+    -"lottie-web": "^5.8.1",
 
 ### Whats Included
 
