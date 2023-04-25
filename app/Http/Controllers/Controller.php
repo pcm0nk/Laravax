@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use acidjazz\metapi\MetApi;
 use Faker\Factory;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -21,11 +20,9 @@ class Controller extends BaseController
     use AuthorizesRequests;
     use DispatchesJobs;
     use ValidatesRequests;
-    use MetApi;
 
     public function __construct(Request $request)
     {
-        $this->metApiInit($request);
     }
 
     /**
@@ -33,7 +30,7 @@ class Controller extends BaseController
      *
      * @return string
      */
-    public function routes(): string
+    public function routes()
     {
         Artisan::call('route:list --json');
         $routes = json_decode(Artisan::output());
@@ -88,7 +85,7 @@ class Controller extends BaseController
      * @param  Request  $request
      * @return Response|JsonResponse
      */
-    public function example(Request $request): Response|JsonResponse
+    public function example(Request $request)
     {
         if (! app()->environment('testing')) {
             sleep(1);
@@ -114,13 +111,13 @@ class Controller extends BaseController
         return $this->render($users);
     }
 
-    public function exampleError(): Response|JsonResponse
+    public function exampleError()
     {
         // @phpstan-ignore-next-line
         return $this->render(['forced_error' => $forced_error]);
     }
 
-    public function auth(): Redirector|Application|RedirectResponse
+    public function auth()
     {
         return redirect(config('app.web'));
     }

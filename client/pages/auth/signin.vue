@@ -1,11 +1,12 @@
 <script>
 import { useSnackbar } from '~/composables/useSnackbar';
-
+import { useMainStore } from '@/store/mainstore'
 export default {
     setup() {
-        const createSnackbar = useSnackbar();
+      const store = useMainStore()
+        const createSnackbar = useSnackbar()
         return {
-            createSnackbar
+            createSnackbar,store
         };
     },
     data() {
@@ -63,26 +64,25 @@ export default {
     <v-container class="fill-height">
         <v-row align="center">
             <v-col md="4" cols="12" align-self="center">
+              <v-form autocomplete="off" model-value="validit" @keydown.enter="login">
                 <v-card min-height="320px" class="elevation-3" flat style="background-color:#0201041a!important">
                     <v-card-title class="text-center mb-4">
                         <v-img height="160px" class="mt-4 mb-4" src="/pwalogo.webp"></v-img>
                         <span class="text-h5 text-white" v-if="thetype == 'login'">Login To System</span>
                     </v-card-title>
                     <v-card-text class="pb-0 mb-0">
-                        <v-form autocomplete="off" model-value="validit" @keydown.enter="login">
-                            <v-text-field variant="outlined" color="#ffffff" v-model="email" class="mb-2 white-text">
+                            <v-text-field variant="outlined" color="#ffffff" :rules="store.emailregex" v-model="email" class="mb-2 white-text">
                                 <template v-slot:label>
                                     <p class="text-white text-subtitle 1">Username</p>
                                 </template>
                             </v-text-field>
-                            <v-text-field variant="outlined" color="#ffffff" type="password" v-model="password"
+                            <v-text-field variant="outlined" :rules="store.numberregex" color="#ffffff" type="password" v-model="password"
                                 class="mb-2">
                                 <template v-slot:label>
                                     <p class="text-white text-subtitle 1">Password</p>
 
                                 </template>
                             </v-text-field>
-                        </v-form>
 
                     </v-card-text>
                     <v-card-actions class="pb-3">
@@ -97,11 +97,11 @@ export default {
 
                             </v-col>
                             <v-col cols="12" md="4" class="pt-0 text-center text-white">
-                                <v-btn block :disable="loading" debounce-events="click" v-debounce:800ms="login"
+                                <v-btn block :disable="loading" @click="login"
                                     color="white" label="Login" variant="outlined">
                                     <template v-slot=loader>
                                         <span v-if="loading">
-                                           Hang On!
+                                           Loading...
                                         </span>
                                         <span v-else>
                                             Login
@@ -112,6 +112,7 @@ export default {
                         </v-row>
                     </v-card-actions>
                 </v-card>
+              </v-form>
             </v-col>
         </v-row>
     </v-container>

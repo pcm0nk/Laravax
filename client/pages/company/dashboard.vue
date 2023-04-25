@@ -17,7 +17,6 @@ export default {
 
 <template>
     <div class="mx-auto container p-2 lg:p-8 flex flex-col">
-  <h1 class="text-h1 text-center">THIS IS Dashboard</h1>
+  <h1 class="text-h1 text-primary text-center">THIS IS Dashboard</h1>
     </div>
   </template>
-  

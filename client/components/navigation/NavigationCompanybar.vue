@@ -29,7 +29,7 @@ export default {
             value:'actions',
             menuoption:
             [
-              {opid:0,icon:'mdi-circle-small',text:'Charts',to:'/company/charts'}
+              {opid:0,icon:'mdi-circle-small',text:'Charts',to:'#'}
             ]
           },
           {
@@ -42,13 +42,13 @@ export default {
               {
                 text:'Levels',
               opid:0,
-              to:'/company/tashkilatlevel',
+              to:'#',
               icon:'mdi-circle-small'
             },
               {
                 text:'Top Chart',
               opid:1,
-              to:'/company/topcharts',
+              to:'#',
               icon:'mdi-circle-small'
             }
             ]
@@ -129,11 +129,11 @@ methods:{
           </template>
           </v-list-item>
         </template>
-        
+
         </v-list>
       </v-navigation-drawer>
 
-      <v-navigation-drawer temporary 
+      <v-navigation-drawer temporary
       color="secondnavcolor"
       v-click-outside="{
       handler: onClickOutside,
