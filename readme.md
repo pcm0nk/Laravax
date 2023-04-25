@@ -139,4 +139,3 @@ const result = api.delete<api.MetApiResponse>('/user/1')
 
 * Example on how to use pinia in `auth/signing.vue`
 
-### I do not plan to maintain the project.but any pull to improve it is welcome
