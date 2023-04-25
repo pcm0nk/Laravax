@@ -8,7 +8,7 @@
 
 This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/laranuxt)** then I added vuetify theme in dark and light mode, authentication with passport and pinia and some more which you can chech it at [Whats Included](#Whats-Included)
 
-:warning: I removed some of the packages that came from the forked project
+## :warning: I removed some of the packages that came from the forked project
 ### Back-end
     -"fumeapp/modeltyper": "^1.0",
     +"acidjazz/humble": "^3.0",
