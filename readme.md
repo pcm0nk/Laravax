@@ -25,16 +25,20 @@ This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/lar
 
 ## Whats Included
 
-* [Laravel](https://laravel.com) - Back-end Framework Version 10
+### Backend
+* [Laravel](https://laravel.com) - Backend Framework Version 10
   * [Passport](https://laravel.com/docs/10.x/passport) - Authenticating APIs using Laravel 
 
-* [NUXT v3](https://nuxt.com) Front-end, A Progressive Vuejs framework
-  * [Vuetify](https://vuetifyjs.com/)UI Library with beautifully handcrafted Vue Components
+## Frontend
+* [NUXT v3](https://nuxt.com) (Front-end, A Progressive Vuejs framework
+
+  * [Vuetify](https://vuetifyjs.com/) (UI Library with beautifully handcrafted Vue Components)
     + Implemented custom Dark and Light mode
     + Added a double navigation drawer which the second one only opens after choosing something from the first one
     + Different layouts for Home,Signin,Dashboard
-  * [Pinia](https://pinia.vuejs.org/) Pinia is a store library and state management framework for Vue 3
-   + Added Email and password rules in pinia and called it in auth/signing.vue 
+
+  * [Pinia](https://pinia.vuejs.org/) (Store library and state management framework for Vue 3)
+     + Added Email and password rules in pinia and called it in auth/signing.vue 
 
 ### Installation Instructions
 
@@ -57,10 +61,11 @@ This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/lar
  After Your tests are done and you have the boilerplate running you should do these two things
  * Must run `php artisan key:generate` to have a unique **Laravel App Key**
  * Must run `php artisan passport:keys --force` to regenerate passport keys to make sure you have unique keys
-* However if you dont do this,Your **Application Key** which is used for CSRF token and your **Passport Secret Keys** are exposed to every developer who used this repo (If that make sense)*
+
+### _ However if you dont do this,Your **Application Key** which is used for CSRF token and your **Passport Secret Keys** are exposed to every developer who used this repo (If that make sense) _
+
 
 * Feel free to delete excess media in  `/resources/`
-
 
 ### Local Environment
 * run `npm dev` in one terminal for Nuxt 
