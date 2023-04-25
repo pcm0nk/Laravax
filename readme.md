@@ -2,24 +2,40 @@
   <img src="https://raw.githubusercontent.com/fumeapp/laranuxt/main/resources/laranuxt.png" width="200" />
 </p>
 
-## Laravel + Nuxt.js Boilerplate- Laranux
+## Laravel + Nuxt.js + Vuetify + Pinia Boilerplate- Laranux
 
+> Example of Authentication,Light & Dark Mode In Vuetify,Double Navigation Drawer, Multiple Layouts with different style and using pinia in nuxt 3 enviorment.
 
-> Examples on using Dark Mode, authentication, and listing data
+This project was forked from **[fumeapp/laranuxt](https://github.com/fumeapp/laranuxt)** then I added vuetify theme in dark and light mode, authentication with passport and pinia and some more
+
+:warning: I removed some of the packages that came from the forked project
+### Back-end
+    -"fumeapp/modeltyper": "^1.0",
+    +"acidjazz/humble": "^3.0",
+    *"acidjazz/metapi": "^2.1",
+    -"barryvdh/laravel-debugbar": "^3.5",
+
+### Front-end
+    -"@tailvue/nuxt": "^0.1.62",
+    *"dayjs": "^1.10.7",
+    +"husky": "^8.0.1",
+    -"@iconify/vue": "^4.0.0",
+    *"nuxt-windicss": "^2.5.5",
+    +"lottie-web": "^5.8.1",
 
 ### What is included
 
-* [NUXT v3](https://nuxt.com) front end, a progressive Vue.js framework - For Nuxt v2 visit [this branch](https://github.com/fumeapp/laranuxt/tree/nuxt2)
-  * [tailvue](https://github.com/fumeapp/tailvue) a collection of components built for Nuxt.js, powered by WindiCSS|TailwindCSS
-  * [Authentication library](https://github.com/fumeapp/laranuxt#api-and-authentication) to assist with user sessions and logging in/out
-  * Example Authentication Middleware
-
-* [Laravel](https://laravel.com) - for our API - `v9.40.0`
+* [Laravel](https://laravel.com) - Backend Framework Version 9
   * [Model Typer](https://github.com/fumeapp/modeltyper) - Generates Typescript interfaces from Laravel Models 
   * [MetAPI](https://github.com/fumeapp/metapi) - API helpers and utilities
   * [humble](https://github.com/fumeapp/humble) - Passwordless sessioning with detailed device and location
   * [debugbar](https://github.com/barryvdh/laravel-debugbar) - awesome debugbar for our API
   * [ide-helper](https://github.com/barryvdh/laravel-ide-helper) - Helper files to enable help with IDE autocompletion
+
+* [NUXT v3](https://nuxt.com) front end, a progressive Vue.js framework - For Nuxt v2 visit [this branch](https://github.com/fumeapp/laranuxt/tree/nuxt2)
+  * [tailvue](https://github.com/fumeapp/tailvue) a collection of components built for Nuxt.js, powered by WindiCSS|TailwindCSS
+  * [Authentication library](https://github.com/fumeapp/laranuxt#api-and-authentication) to assist with user sessions and logging in/out
+  * Example Authentication Middleware
 
 ### Installation
 
