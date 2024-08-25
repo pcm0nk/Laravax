@@ -4,7 +4,7 @@
 
 ## Changes
 
-### Version 1.3
+### Version 1.0.12
 
 - Added .env file
 - Fixed migration errors
